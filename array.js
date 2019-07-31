@@ -1,16 +1,30 @@
-const valores = [7.7 , 8.9, 6.3, 9.2]
-console.log[valores[0], valores[3]]
-console.log[valores[4]]
+console.log(typeof Array, typeof new Array, typeof [])
 
-valores[10] = 10
-console.log(valores)
-console.log(valores.length)
+let aprovados = new Array('Bia', 'Carlos', 'Ana')
+console.log(aprovados)
 
-valores.push({id: 3}, false, null,'teste')
-console.log(valores)
+aprovados = ['Bia', 'Carlos', 'Ana']
+console.log(aprovados[0])
+console.log(aprovados[1])
+console.log(aprovados[2])
+console.log(aprovados[3])
 
-console.log(valores.pop())
-delete valores[0]
-console.log(valores)
+aprovados[3] = 'Paulo'
+aprovados.push('Abia')
+console.log(aprovados.length)
 
-console.log(typeof valores)
+aprovados[9] = 'Rafael'
+console.log(aprovados.length)
+console.log(aprovados[8] === undefined)
+
+console.log(aprovados)
+aprovados.sort()
+console.log(aprovados)
+
+delete aprovados[1]
+console.log(aprovados[1])
+console.log(aprovados[2])
+
+aprovados = ['Bia', 'Carlos', 'Ana']
+aprovados.splice(1, 1, 'Elemento1', 'Elemento2')
+console.log(aprovados)
